@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Define a TestNG suite for identifying new bikes -->
+
+<suite name="Identify New Bike"> <!-- Define a TestNG suite named "Identify New Bike" -->
+
+	<test name="All Test"> <!-- Define a test named "All Test" -->
+
+		<classes> <!-- Specify classes to be included in the test -->
+
+			<class name="Hackathon.NewBikeSearch.test.MainTest" /> <!-- Include the "MainTest" class for testing -->
+
+		</classes>
+
+	</test> <!-- End of Test -->
+
+</suite> <!-- End of Suite -->

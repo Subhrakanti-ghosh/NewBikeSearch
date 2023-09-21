@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Smoke Suite"> <!-- Define a TestNG suite named "Smoke Suite" -->
+
+	<test thread-count="5" name="Test"> <!-- Define a test named "Test" with thread count of 5 -->
+
+		<groups> <!-- Specify groups to be included and excluded -->
+
+			<run>
+
+				<include name="Regression"></include> <!-- Include tests from the "Regression" group -->
+
+				<exclude name="Smoke."></exclude> <!-- Exclude tests from the "Smoke" group -->
+
+			</run>
+
+		</groups>
+
+		<classes> <!-- Define classes to be included in the test -->
+
+			<class name="Hackathon.NewBikeSearch.test.MainTest" /> <!-- Include the "MainTest" class for testing -->
+
+		</classes>
+
+	</test> <!-- End of Test -->
+
+</suite> <!-- End of Suite -->
